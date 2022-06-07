@@ -12,8 +12,8 @@ import org.springframework.context.annotation.Configuration;
 import static ml.java.library.domains.GreeterConfigParams.*;
 
 @Configuration
-@ConditionalOnClass(Greeter.class)
-@EnableConfigurationProperties(GreeterProperties.class)
+@ConditionalOnClass(Greeter.class) //当加载demo-library时生效
+@EnableConfigurationProperties(GreeterProperties.class) //注册GreeterProperties（application.properties绑定）
 public class GreeterAutoConfiguration {
 
     @Autowired

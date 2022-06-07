@@ -2,7 +2,7 @@ package ml.java.starter.context;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
-@ConfigurationProperties(prefix = "baeldung.greeter") //从
+@ConfigurationProperties(prefix = "baeldung.greeter") //application.properties绑定
 public class GreeterProperties {
 
     private String userName;
